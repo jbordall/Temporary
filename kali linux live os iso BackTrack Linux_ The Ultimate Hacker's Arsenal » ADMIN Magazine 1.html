@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>        
+    
+
+
+
+                        	            <meta name="author" content="Ken Hess" />
+
+    
+
+
+
+
+
+<title>BackTrack Linux: The Ultimate Hacker's Arsenal &raquo; ADMIN Magazine</title>
+                
+    <link rel="canonical" href="https://www.admin-magazine.com/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal" /><link href="https://plus.google.com/u/0/115963275980327663365/posts?rel=publisher" rel="" />
+<meta name="description" content="Penetration Testing and security auditing are now part of every system administrator's &quot;other duties as assigned.&quot; BackTrack Linux is a c..." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="dcterms.rightsHolder" content="Linux New Media USA LLC"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="revisit-after" content="1 days">
+
+<meta property="og:description" content="Penetration Testing and security auditing are now part of every system administrator's &quot;other duties as assigned.&quot; BackTrack Linux is a c..." />
+<meta property="og:title" content="BackTrack Linux: The Ultimate Hacker's Arsenal &raquo; ADMIN Magazine" />
+<meta property="og:url" content="http://www.admin-magazine.com/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal" />
+<meta property="og:site_name" content="ADMIN Magazine" />
+
+
+                        	            <meta property="og:image" content="http://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/figure1/39983-1-eng-US/Figure1_opengraph_h.jpg" />
+    <meta property="og:image:width" content="267" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <link rel="image_src" href="http://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/figure1/39983-1-eng-US/Figure1_opengraph_h.jpg" />
+        
+
+<!--[if lt IE 9 ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1" />
+<![endif]-->
+
+<link rel="Alternate" type="application/rss+xml" title="RSS" href="/rss/feed/news" />
+<link rel="Shortcut icon" href="/extension/adminmag/design/admin_fe/images/favicon.ico" type="image/x-icon" />
+
+
+        <link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/9e7b6a9469590b74e60fa7b6ec0be744_all.css" />
+<link rel="stylesheet" type="text/css" href="/var/storage/packages/eZ-systems/ezflow_design/files/default/file/classes-colors.css" /><link rel="stylesheet" type="text/css" href="/var/storage/packages/eZ-systems/ezflow_design/files/default/file/site-colors.css" />
+<script type="text/javascript" src="/var/ezflow_site/cache/public/javascript/66e447aec8b9a83aec06b506e6a7293e.js" charset="utf-8"></script>
+
+
+
+<script defer data-api="/api/event" data-domain="admin-magazine.com" src="/js/script.js"></script>
+
+
+</head>
+<body>
+<div id="Body">
+    
+	
+    <div class="leaderboard span12">
+        <!-- Aqua Ad Server Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 Leaderboard -->
+        <ins data-revive-zoneid="12069" data-revive-id="fa8c6c9da7f33852f7097c4a94da1070"></ins>
+        <script async src="//servedby.aqua-adserver.com/asyncjs.php"></script>
+    </div>
+    <div class="skyscraper hidden-phone hidden-tablet">
+        <div>
+        <!-- Aqua Ad Server Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 Wide Skyscraper Top -->
+        <ins data-revive-zoneid="12082" data-revive-id="fa8c6c9da7f33852f7097c4a94da1070"></ins>
+        <script async src="//servedby.aqua-adserver.com/asyncjs.php"></script>
+        </div>
+        <div style="margin-top:5px;">
+        <!-- Aqua Ad Server Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 Wide Skyscraper Bottom -->
+        <ins data-revive-zoneid="12083" data-revive-id="fa8c6c9da7f33852f7097c4a94da1070"></ins>
+        <script async src="//servedby.aqua-adserver.com/asyncjs.php"></script>
+        </div>
+    </div>
+    <div id="Stage">
+	<header>
+	    <div class="container">
+		<div class="row">
+		    <div class="span12">
+			<div class="row" id="HeaderTop">
+			    <div class="span3" id="Logo">
+				<a href="/"><img src="/extension/adminmag/design/admin_fe/images/admin-magazine-logo.png" title="Admin Magazine" alt="Admin Magazine" /></a>			    </div>
+			    <div class="span9" id="HeaderRight">
+				<div class="row">
+				    <div class="span1" id="Newsletter">
+					&nbsp;
+				    </div>
+
+				    <div class="span3" id="Search">
+					<div id="searchbox">
+    <form action="/content/search">
+	<label>search:</label>
+        <input  onfocus="if (value == 'search') {value=''}" onblur="if (value== '') {value='search'}"  name="SearchText" value="search" id="searchtext" class="input_top" type="text" />
+		    <input onclick="_gaq.push(['_trackEvent', 'header-search', 'search', 'image-link'])" type="image" class="searchimage" src="/extension/bootstrap/design/bootstrap/images/icons/pfeil_schwarz.gif" alt="search:" />
+			<div id="header-autocomplete-rs"></div>
+    </form>
+</div>
+
+<script type="text/javascript" src="/var/ezflow_site/cache/public/javascript/05e4fa5193610538b63ad2c8a5ca7b13.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+jQuery('#header-autocomplete-rs').css('width', jQuery('input#searchtext').width() + 60);
+var autocomplete = new eZAJAXAutoComplete({    url: '/ezjscore/call/ezfind::autocomplete',
+    inputid: 'searchtext',
+    containerid: 'header-autocomplete-rs',
+    minquerylength: 2,
+    resultlimit: 10});
+</script>
+				    </div>
+				    <div class="span2 hidden-tablet hidden-phone" id="Claim">
+					
+				    </div>
+				</div>
+			    </div>
+			</div>
+			<div class="row">
+			    <div class="span12" id="Menue">
+				<ul>
+    		    		
+		    <li><a href="/News" class="toplinks ">News</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Articles" class="toplinks ">Articles</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Tech-Tools" class="toplinks ">Tech Tools</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Subscribe" class="toplinks ">Subscribe</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Archive" class="toplinks ">Archive</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Whitepapers" class="toplinks ">Whitepapers</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Write-for-Us" class="toplinks ">Write for Us!</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="/Newsletter" class="toplinks ">Newsletter</a></li>
+		    <li class="delimiter">&nbsp;</li>		    		
+		    <li><a href="https://shop.linuxnewmedia.com/shop" target="_blank" class="toplinks ">Shop</a></li>
+		    </ul>
+
+
+			    </div>
+			</div>
+			<div class="row" id="Tagmenue">
+			    <div class="span12">
+				<ul>
+    		    <li><a target="_blank" href="/DevOps/">DevOps</a></li>
+	    		    <li><a target="_blank" href="/CloudAge/">Cloud Computing</a></li>
+	    		    <li><a href="/tags/view/Virtualization">Virtualization</a></li>
+	    		    <li><a target="_blank" class="track" href="/HPC/">HPC</a></li>
+	    		    <li><a href="/tags/view/Linux">Linux</a></li>
+	    		    <li><a href="/tags/view/Windows">Windows</a></li>
+	    		    <li><a href="/tags/view/Security">Security</a></li>
+	    		    <li><a href="/tags/view/Monitoring">Monitoring</a></li>
+	    		    <li><a href="/tags/view/Databases">Databases</a></li>
+	        <li><a href="/content/view/tagcloud/2" class="last">all Topics...</a></li>
+</ul>
+
+			    </div>
+			</div>
+			<div class="row">
+			    <div class="span12" id="Breadcrumb">
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+
+    
+                	    	    
+	    
+	    	    	    	    	        	        <span class="path" itemprop="url"><span itemprop="title">    Home</span></span>
+	    		            	    		&nbsp;<span class="separator">&#187;</span>&nbsp;
+	    	        	    	    
+	    
+	    	    	    	    	        	        <span class="path" itemprop="url"><span itemprop="title">        	<a onclick="_gaq.push(['_trackEvent', 'breadcrumb', '[2] Articles', 'text-link'])" href="/Articles">Articles</a>
+        </span></span>
+	    		            	    		&nbsp;<span class="separator">&#187;</span>&nbsp;
+	    	        	    	    
+	    
+	    	    	    	    	        <span class="path" itemprop="url"><span itemprop="title">        	<a onclick="_gaq.push(['_trackEvent', 'breadcrumb', '[3] BackTrack Linux: The Ultimate Hacker's Arsenal', 'text-link'])" href="#">BackTrack Linux...</a>
+        </span></span>
+	    		                        		    <div class="link"><a class="login" onclick="_gaq.push(['_trackEvent', 'header-login', 'login', 'text-link'])" href="/user/login" title="Logout">Login</a></div>
+		            <div class="link"><a onclick="_gaq.push(['_trackEvent', 'header-social', 'facebook', 'image-link'])" href="https://www.facebook.com/adminmag" target="_blank" title="ADMIN Magazine on Facebook"><img src="/extension/bootstrap/design/bootstrap/images/facebook_icon.png" width="16" height="16" alt="ADMIN Magazine on Facebook"/></a></div>            <div class="link"><a onclick="_gaq.push(['_trackEvent', 'header-social', 'google-plus', 'image-link'])" href="https://plus.google.com/u/0/115963275980327663365/posts" target="_blank"><img src="/extension/bootstrap/design/bootstrap/images/gplus-16.png" width="16" height="16" alt="GooglePlus" title="GooglePlus" /></a></div></div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</header>
+	<div>
+	    <div class="container" id="mainContent">		<div id="main-position" class="row">
+		    
+            <!-- Aqua Ad Server Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 Masthead -->
+            <ins data-revive-zoneid="12087" data-revive-id="fa8c6c9da7f33852f7097c4a94da1070"></ins>
+            <script async src="//servedby.aqua-adserver.com/asyncjs.php"></script>
+		</div>
+		<div class="row">
+		    					    		    			<div id="ContentLeft" class="span8">
+			    
+<div class="article" itemscope itemtype="http://schema.org/Article">
+                    <div style="float:right;margin:0 0 15px 15px;">
+	
+    </div>
+    <h2></h2>
+    <h1 itemprop="name">    BackTrack Linux: The Ultimate Hacker's Arsenal</h1>
+    		<div class="article-image"></div>
+	<div class="attribute-caption caption"></div>
+	
+            <div class="author">
+		    	    	    	    	    	    			    	    
+
+	    	    		<span class="author" itemprop="author">Ken Hess</span>
+	    	    	    </div>
+	        <div class="attribute-body">
+	<p>
+Penetration (Pen) testing and security auditing are now part of every system administrator's &quot;other duties as assigned.&quot; BackTrack Linux (<a href="http://www.backtrack-linux.org/" target="_blank">http://www.backtrack-linux.org/</a>) is a custom distribution designed for security testing for all skill levels from novice to expert. It is the largest collection of wireless hacking, server exploiting, web application assessing, social-engineering tools available in a single Linux distribution. <br />
+&nbsp;<br />
+BackTrack Linux is a fine example of a specialized Linux distribution. Its only purpose is to test your network, devices, and systems for security vulnerabilities. BackTrack is packed with every security and hacker tool used by security professionals and professional hackers. If you're looking for all of the tools in one place, this is it. <br />
+&nbsp;<br />
+You must love the command line to use this distro, although it does contain a few graphical tools, such as <i>zenmap</i>
+ and <i>wireshark</i>
+. Even in graphical mode (which comes up with the Gnome desktop), most of the applications open in a terminal window. Fortunately, each command line application opens and displays the help text so you can refer to the command reference right there on the screen. <br />
+&nbsp;<br />BackTrack is a highly customized, Debian-based Linux distribution that you should only update through BackTrack's own repositories (<a href="http://all.repository.backtrack-linux.org/" target="_blank">http://all.repository.backtrack-linux.org/</a>).</p><a name="eztoc0_1" id="eztoc0_1"></a><h3>What Do You Get For Nothing?</h3><p>
+BackTrack Linux contains more than 300 security tools and utilities that are all open source. Many security professionals prefer them over expensive commercial programs. And, hackers certainly prefer hundreds of no cost, high-end applications to anything commercial. One reason for BackTrack's popularity is its anonymity. You don't have to register (Registration is optional). No names, bank accounts, or user accounts are associated with obtaining the ISO image. Additionally, no spyware will report back to any vendor. <br />
+&nbsp;<br />
+In short, BackTrack's tagline says it all: &quot;The quieter you become, the more you are able to hear.&quot; <br />
+&nbsp;<br />
+The distro is a bootable, live DVD that's approximately 2GB in size. If you decide to install it to a hard disk or USB drive, the installation expands to almost 7GB. BackTrack is perfectly suited to installation to a USB drive, so that it's portable and stealthier than a hard disk install. A 16GB USB drive holds the installation with plenty of room for saving files and data. <br />Remember that you'll need to save your data from your information gathering exercises so that you can write security audit reports for your clients. The Live DVD is powerful but considerably slower than a hard disk or USB disk. If you use the DVD, use a USB drive or mountable hard disk partition to save the information you gather.</p><a name="eztoc0_2" id="eztoc0_2"></a><h3>What's Included in the Distro</h3><p>The BackTrack Distribution includes the following major tool categories:</p>
+<ul>
+
+<li>Information Gathering </li>
+
+<li>Vulnerability Assessment </li>
+
+<li>Exploitation Tools </li>
+
+<li>Privilege Escalation </li>
+
+<li>Maintaining Access </li>
+
+<li>Reverse Engineering </li>
+
+<li>RFID Tools </li>
+
+<li>Stress Testing </li>
+
+<li>Forensics </li>
+
+<li>Reporting Tools </li>
+
+<li>Services </li>
+
+<li>Miscellaneous</li>
+
+</ul>
+<p>Under each of the main headings, you'll find subheadings. For example, under the first selection, <i>Information Gathering</i>
+, you have Network Analysis, Web Application Analysis, Database Analysis, and Wireless Analysis. Under each of those subheadings, you have multiple types of analyses. The <i>Network Analysis</i>
+ subheading contains an extensive list of network analysis types from DNS Analysis to VPN Analysis, as shown in Figure 1.</p>
+<div class="" id="">    
+        	                    
+	<a href="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/figure1/39983-1-eng-US/Figure1_reference.jpg" rel="lightbox[image]" title="Figure 1: BackTrack-&gt;Information Gathering-&gt;Network Analysis.">
+	    <img src="/var/ezflow_site/storage/images/media/images/figure1/39983-1-eng-US/Figure1_reference.jpg" alt="">
+	</a>
+	<span class="attribute-caption" style="max-width:590px;">
+Figure 1: BackTrack-&gt;Information Gathering-&gt;Network Analysis.
+</span>    </div><p>At the final level, you'll find multiple choices for each type of analysis. For example, under <i>Network Scanners</i>
+, you have a list of 11 different network scanning tools from which to choose. See Figure 2.</p>
+<div class="" id="">    
+        	                    
+	<a href="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/figure2/39987-1-eng-US/Figure2_reference.jpg" rel="lightbox[image]" title="Figure 2: The list of BackTrack's Network Scanner tools.">
+	    <img src="/var/ezflow_site/storage/images/media/images/figure2/39987-1-eng-US/Figure2_reference.jpg" alt="">
+	</a>
+	<span class="attribute-caption" style="max-width:590px;">
+Figure 2: The list of BackTrack's Network Scanner tools.
+</span>    </div>
+    </div>
+        <div class="pagenavigator">
+	<p>
+	    			    <span class="pages">
+						<span class="current">1</span>
+				    			<span class="other"><a href="/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal/(offset)/2">2</a></span>
+		    				    			<span class="other"><a href="/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal/(offset)/4">3</a></span>
+		    					    </span>
+	    		    <span class="next"><a href="/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal/(offset)/2"><span class="text">Next&nbsp;&raquo;</span></a></span>
+
+			</p>
+	<div class="break"></div>
+    </div>
+    <div class="social_bookmarks">
+    <div style="display: inline; padding-top: 5px;">
+	<a class="FlattrButton" style="display:none;" title="BackTrack Linux: The Ultimate Hacker's Arsenal" rev="flattr;uid:;button:compact;category:text;tags:linux,magazine,linux-magazine;" href="http://www.admin-magazine.com/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal">
+	    Penetration Testing and security auditing are now part of every system administrator's &quot;other duties as assigned.&quot; BackTrack Linux is a custom distribution designed for security testing for all skill levels from novice to expert.
+	</a>
+    </div>
+    <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fwww.linux-magazin.de%2F&amp;linkname=linux-magazine.com"><img src="http://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0" alt="Share"/></a>
+    
+	<script type="text/javascript">
+	    var a2a_config = a2a_config || {};
+	    a2a_config.linkname = "BackTrack Linux: The Ultimate Hacker's Arsenal";
+	    a2a_config.linkurl = "https://www.admin-magazine.com/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal";
+	</script>
+	<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+    
+</div>
+
+                <div class="attribute-relatedcontent">
+    <h2>Related content</h2>
+    <ul>
+		            	<li class="float-break">
+		            					    									<div class="attribute-image">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/08/BackTrack-5-R2', 'image-link'])" href="/Archive/2012/08/BackTrack-5-R2" title="BackTrack 5 R2">
+
+
+
+
+            
+ 
+    
+    
+
+
+
+
+        	<img src="/var/ezflow_site/storage/images/archive/2012/08/backtrack-5-r2/dvd-label_admin08.png/247750-1-eng-US/DVD-Label_ADMIN08.png_small.png" itemprop="image" alt="">
+        </a>
+			    			    			</div>
+						        		    <a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/08/BackTrack-5-R2', 'text-link'])" href="/Archive/2012/08/BackTrack-5-R2" title="BackTrack 5 R2">BackTrack 5 R2</a>
+									<div class="attribute-intro">
+</div>
+			<div class="more">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/08/BackTrack-5-R2', 'more-link'])" href="/Archive/2012/08/BackTrack-5-R2" title="BackTrack 5 R2">more &raquo;</a>
+			    			    			</div>
+		            	    <!--100-->
+        	</li>
+        		    		            	<li class="float-break">
+		            					    									<div class="attribute-image">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Articles/Develop-your-own-scripts-for-Nmap', 'image-link'])" href="/Articles/Develop-your-own-scripts-for-Nmap" title="Develop your own scripts for Nmap">
+
+
+
+
+            
+     
+    
+    
+
+
+
+
+        	<img src="/var/ezflow_site/storage/images/archive/2015/30/develop-your-own-scripts-for-nmap/po-22002-123rf-raman_maisei_resized.png/118711-1-eng-US/PO-22002-123RF-Raman_Maisei_resized.png_small.png" itemprop="image" alt="Lead Image © Raman Maisei, 123RF.com" title="Lead Image © Raman Maisei, 123RF.com">
+        </a>
+			    			    			</div>
+						        		    <a onclick="_gaq.push(['_trackEvent', 'related-content', 'Articles/Develop-your-own-scripts-for-Nmap', 'text-link'])" href="/Articles/Develop-your-own-scripts-for-Nmap" title="Develop your own scripts for Nmap">Develop your own scripts for Nmap</a>
+									<div class="attribute-intro">
+Nmap does a great job with standard penetration testing tasks, but for specific security analyses, you will want to develop your own test scripts. The Nmap Scripting Engine makes this possible.</div>
+			<div class="more">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Articles/Develop-your-own-scripts-for-Nmap', 'more-link'])" href="/Articles/Develop-your-own-scripts-for-Nmap" title="Develop your own scripts for Nmap">more &raquo;</a>
+			    			    			</div>
+		            	    <!--48-->
+        	</li>
+        		    		            	<li class="float-break">
+		            								        		    <a onclick="_gaq.push(['_trackEvent', 'related-content', 'News/Nmap-6.0-Released', 'text-link'])" href="/News/Nmap-6.0-Released" title="Nmap 6.0 Released">Nmap 6.0 Released</a>
+									<div class="attribute-intro"></div>
+			<div class="more">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'News/Nmap-6.0-Released', 'more-link'])" href="/News/Nmap-6.0-Released" title="Nmap 6.0 Released">more &raquo;</a>
+			    			    			</div>
+		            	    <!--33-->
+        	</li>
+        		    		            	<li class="float-break">
+		            					    									<div class="attribute-image">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/11/Give-your-servers-the-once-over-with-Nmap', 'image-link'])" href="/Archive/2012/11/Give-your-servers-the-once-over-with-Nmap" title="Give your servers the once over with Nmap">
+
+
+
+
+            
+     
+    
+    
+
+
+
+
+        	<img src="/var/ezflow_site/storage/images/archive/2012/11/give-your-servers-the-once-over-with-nmap/123rf_4011127_passport_ragsac_resized.png/233494-1-eng-US/123rf_4011127_passport_ragsac_resized.png_small.png" itemprop="image" alt="© ragsac, 123RF.com" title="© ragsac, 123RF.com">
+        </a>
+			    			    			</div>
+						        		    <a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/11/Give-your-servers-the-once-over-with-Nmap', 'text-link'])" href="/Archive/2012/11/Give-your-servers-the-once-over-with-Nmap" title="Give your servers the once over with Nmap">Give your servers the once over with Nmap</a>
+									<div class="attribute-intro">
+If you've ever had to test the security of your servers, you've almost certainly come across the ever-flexible Nmap – used by sys admins to help protect their servers and diagnose problems.</div>
+			<div class="more">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Archive/2012/11/Give-your-servers-the-once-over-with-Nmap', 'more-link'])" href="/Archive/2012/11/Give-your-servers-the-once-over-with-Nmap" title="Give your servers the once over with Nmap">more &raquo;</a>
+			    			    			</div>
+		            	    <!--31-->
+        	</li>
+        		    		            	<li class="float-break">
+		            								        		    <a onclick="_gaq.push(['_trackEvent', 'related-content', 'Articles/Protect-Your-Servers-with-Nmap', 'text-link'])" href="/Articles/Protect-Your-Servers-with-Nmap" title="Protect Your Servers with Nmap">Protect Your Servers with Nmap</a>
+									<div class="attribute-intro">    	    <p>If you've ever had to test the security of your servers, you've almost certainly come across the ever-flexible Nmap (Network Mapper) – used by sys admins to help protect their servers and diagnose problems.</p>
+
+</div>
+			<div class="more">
+			            			<a onclick="_gaq.push(['_trackEvent', 'related-content', 'Articles/Protect-Your-Servers-with-Nmap', 'more-link'])" href="/Articles/Protect-Your-Servers-with-Nmap" title="Protect Your Servers with Nmap">more &raquo;</a>
+			    			    			</div>
+		            	    <!--30-->
+        	</li>
+        		    	    </ul>
+</div>                
+    	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    
+	    var disqus_shortname = 'adminmagazine';
+	    var disqus_identifier = 4121;
+	    var disqus_url = "https://www.admin-magazine.com/Articles/BackTrack-Linux-The-Ultimate-Hacker-s-Arsenal";
+	    var disqus_title = "BackTrack Linux: The Ultimate Hacker's Arsenal";
+	    
+		(function() {
+		    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	    
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</div>
+
+			</div>
+			<div id="ContentRight" class="span4">
+			                    
+    		    <h6>Subscribe to our <a href="https://us2.list-manage.com/subscribe?u=1c76cb37f73773b4962ae429b&id=6820c9c211" target="_blank">ADMIN Newsletters</a><br>
+Subscribe to our <a href="https://us2.list-manage.com/subscribe?u=1c76cb37f73773b4962ae429b&id=15836edcb2" target="_blank">Linux Newsletters</a><br>
+Find <a href="https://opensourcejobhub.com/" target="_blank">Linux and Open Source Jobs</a></h6><hr>		    	    <div class="block-separator"></div>
+			    		    		    		    <!-- Aqua Ad Server Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 Medium Rectangle -->
+<ins data-revive-zoneid="12075" data-revive-id="fa8c6c9da7f33852f7097c4a94da1070"></ins>
+<script async src="//servedby.aqua-adserver.com/asyncjs.php"></script>		    	    <div class="block-separator"></div>
+			    		    		    <hr>		    	    <div class="block-separator"></div>
+			    
+<!-- BLOCK: START -->
+
+<div class="block-type-itemlist">
+
+<div class="attribute-header">
+    <h2>Most Popular</h2>
+</div>
+<div class="block-content">
+    <ul>
+               <li><a href="/Archive/2025/86/Inventory-and-manage-your-IT-systems">Inventory and manage your IT systems</a></li>
+	               <li><a href="/Archive/2025/86/Operating-system-images-with-bootc">Operating system images with bootc</a></li>
+	               <li><a href="/Archive/2025/86/Denial-of-service-defense">Denial of service defense</a></li>
+	               <li><a href="/Archive/2025/86/Identify-malicious-traffic-with-Maltrail">Identify malicious traffic with Maltrail</a></li>
+	               <li><a href="/Articles/More-TUI-Tools-for-HPC-Users">More TUI Tools for HPC Users</a></li>
+	        </ul>
+</div>
+
+</div>
+
+<!-- BLOCK: END -->
+		    	    <div class="block-separator"></div>
+			    <hr>
+<h1>Focus On Self-Hosting</h1>
+<p>
+<a href="https://www.admin-it.io/wiring-the-modern-stack-with-node-red/" target="_blank">• Wiring the Modern Stack with Node-RED</a><br>
+<a href="https://www.admin-it.io/your-code-your-server-self-hosted-collaboration-with-forgejo/" target="_blank">• Self-Hosted Collaboration with Forgejo</a><br>
+<a href="https://www.admin-it.io/self-hosted-paas-with-coolify/" target="_blank">• Self-Hosted PaaS with Coolify</a><br>
+<a href="https://www.admin-it.io/build-and-host-docker-images/" target="_blank">• Build and Host Docker Images</a><br>
+<a href="https://www.admin-it.io/self-hosted-pritunl-vpn-server-with-mfa/" target="_blank">• Self-Hosted Pritunl VPN Server with MFA</a><br>
+<a href="https://www.admin-it.io/self-hosted-chat-servers-with-zulip-mattermost-and-rocket-chat/" target="_blank">• Self-Hosted Chat Servers</a><br>
+</p>
+		    	    <div class="block-separator"></div>
+			    <hr>
+<h1>Support Our Work</h1>
+<p><I>ADMIN</I> content is made possible with support from readers like you. Please consider contributing when you've found an article to be beneficial.</p>
+
+<a href="https://www.admin-magazine.com/Support-Our-Work">
+	    <img src="https://www.admin-magazine.com/var/ezflow_site/storage/images/media/images/learn-more/211417-1-eng-US/Learn-More.png" alt="Learn More”>
+	</a>
+
+<hr>		    
+			</div>
+		    		</div>
+
+		<div class="row">
+            <div id="bottom-banner" class="span12">
+		    
+            </div>
+		</div>	    </div>
+	</div>
+	<div>
+	    <div class="container">
+		<div class="row">
+		    <div class="span12" id="Footer">
+			<footer>
+    <div class="footer row">
+	<div class="span1"></div>
+	<div class="span10 claim-wrapper">
+	    <div id="footer-topics" class="container">
+		    			            	        
+<div class="footer-sitemap">
+    </div>
+
+		    		    		    			    
+<div class="footer-topics">
+    				    			    		<div class="footer-topic firstli lastli">
+	    <h2>Service</h2>	    	    <ul>
+				    			<li><a onclick="_gaq.push(['_trackEvent', 'footer-topics', 'Archive/Article-Code', 'text-link'])" href="/Archive/Article-Code">Article Code</a></li>
+		    		    				    			<li><a onclick="_gaq.push(['_trackEvent', 'footer-topics', 'Contact', 'text-link'])" href="/Contact">Contact</a></li>
+		    		    			    </ul>
+	    	</div>
+                    	<div class="footer-topic lastli footer-ini">
+	    <ul>
+				    			<li><a onclick="_gaq.push(['_trackEvent', 'footer-topics', '/Legal-Notice', 'text-link'])" href="/Legal-Notice">Legal Notice</a></li>
+		    		    				    			<li><a onclick="_gaq.push(['_trackEvent', 'footer-topics', '/Privacy-Policy', 'text-link'])" href="/Privacy-Policy">Privacy Policy</a></li>
+		    		    			    </ul>
+	</div>
+    </div>
+
+
+		    	    </div>
+	</div>
+	<div class="span1"></div>
+    </div>
+    <div class="row">
+					    <div id="glossar">
+		<ul id="glossar_menue">
+		    			<li>
+			    <a href="/Glossary">Glossary</a>
+			            <ul>
+		    		<li>
+		    <a href="/Glossary/Backup-Test">Backup Test</a>
+		    		</li>
+	    	    </ul>			</li>
+		    		</ul>
+	    </div>
+			    <div id="copyright">
+				&copy; 2026 <a href="http://www.linuxnewmedia.com/" target="_blank">Linux New Media USA, LLC</a> – <a href="/Legal-Notice">Legal Notice</a>
+	    </div>
+	    </div>
+</footer>		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
